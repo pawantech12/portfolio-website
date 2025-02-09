@@ -66,7 +66,7 @@ let reactProgress = document.querySelector(".reactjs"),
   reactValue = document.querySelector(".reactjs-progress");
 
 let reactStartValue = 0,
-  reactEndValue = 30,
+  reactEndValue = 50,
   rjsspeed = 30;
 
 let progressreact = setInterval(() => {
@@ -81,6 +81,28 @@ let progressreact = setInterval(() => {
     clearInterval(progressreact);
   }
 }, rjsspeed);
+
+
+let rosProgress = document.querySelector(".ros"),
+  rosValue = document.querySelector(".ros-progress");
+
+let rosStartValue = 1, // Reset from 95 to 0 for animation
+  rosEndValue = 95,
+  rosspeed = 30;
+
+let progressros = setInterval(() => {
+  rosStartValue++;
+
+  rosValue.textContent = `${rosStartValue}%`;
+  rosProgress.style.background = `conic-gradient(#6f34fe ${
+    rosStartValue * 3.6
+  }deg, #ededed 0deg)`;
+
+  if (rosStartValue >= rosEndValue) {
+    clearInterval(progressros);
+  }
+}, rosspeed); // Fixed typo here
+
 
 
 // filter using javascript

@@ -171,11 +171,23 @@ body{
     border-radius: 50%;
     background-color: #fff;
 }
+
 .progress-value{
     position: relative;
     font-size: 1.5rem;
     font-weight: 600;
 }
+.ros-progress{
+    color: #6f34fe;  
+
+}
+.isaacsim-progress{
+    color: #6f34fe;  
+}
+.openrmf-progress{
+    color: #6f34fe; 
+}
+
 .html-progress{
     color: #fca61f;
 }
@@ -357,6 +369,7 @@ footer .link-group a:hover{
     transform: translateY(-20px);
     transition-duration: 1s;
 }
+
 .social-links .dribble:hover{
     background-color: #f33a7e;
 }
@@ -367,10 +380,10 @@ footer .link-group a:hover{
     background-color: #25D366;
 }
 .social-links .behance{
-    color: #255afc;
+    color: #fc2525;
 }
 .social-links .behance:hover{
-    background-color: #255afc;
+    background-color: #fc2525;
 }
 
 /* styling back to top button */
@@ -384,3 +397,42 @@ footer .link-group a:hover{
     color: #fff;
     animation: pulse 3s infinite;
 }
+
+
+.social-links a {
+    display: inline-block; /* Ensures the <a> tag behaves like a button */
+    text-decoration: none;
+    border: none;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    background-color: #fff;
+    padding: 14px 15px 10px 15px;
+    border-radius: 50%; /* To make it round like a button */
+    transition: all 1s ease; /* Smooth animation */
+}
+
+.social-links a:hover {
+    color: #fff;
+    transform: translateY(-20px);
+    transition-duration: 1s;
+}
+
+.social-links .linkedin {
+    color: #2c4db9;
+}
+
+
+
+.social-links .linkedin:hover {
+    background-color: #2c4db9;
+}
+
+.social-links .mail {
+    color: #d32525;
+}
+
+.social-links .mail:hover {
+    background-color: #d32525;
+}
+
+
